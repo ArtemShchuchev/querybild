@@ -26,6 +26,15 @@ int main {
 Вызовы AddFrom должны перезаписывать название таблицы в классе.
 Не забудьте ; в конце каждого запроса.
 */
+void SendEvent(const Event& e)
+{
+    std::wcout << L"Sending event " << e.name << L" to " << e.target << L" from " << e.source << std::endl;
+    std::wcout << L"route is: \n";
+    for (const auto& point : e.route)
+    {
+        std::wcout << point << L"->";
+    }
+}
 
 int main(int argc, char** argv)
 {
