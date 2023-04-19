@@ -31,7 +31,10 @@ int main(int argc, char** argv)
 {
 	printHeader(L"Домашнее задание к занятию «Порождающие шаблоны»");
 
-	
+    EventBuilder builder(L"VeryImportantEvent");
+    builder.AddLevel(3).AddMeta(L"key", L"value");
+    builder.AddRoutePoint(L"first").AddRoutePoint(L"second");
+    SendEvent(builder.BuildEvent());
 	
 	std::wcout << "\n";
 	return 0;
