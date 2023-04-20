@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 project(querybild VERSION 1.0 LANGUAGES CXX)
 
 set(OUTPUT_NAME querybild)
-set(HEADERS SqlQuery/sql_query_builder.h)
+set(HEADERS SqlQuery/sql_query_builder.h SqlQuery/quere.h)
 set(SOURCES main.cpp SqlQuery/sql_query_builder.cpp)
 set(MYLIB_PATH ${PROJECT_SOURCE_DIR}/SecondFunk)
 # добавляет путь для подключения #include
